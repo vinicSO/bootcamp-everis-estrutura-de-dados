@@ -49,3 +49,39 @@ Convenções
 	E para "Element", exemplo: List<E>
 	T PARA "Type", exemplo: Collections#addAll
 	? quando genérico
+
+Pilha
+
+	É uma estrutura de dados que possui como característica a seguinte regra: o último que entra é o primeiro que sai.
+
+	LIFO - Last In First Out
+
+	Método Top
+
+		ex: No meuNo = pilha.top();
+
+		meuNo recebe a referência do último elemento adicionado à pilha
+
+	Método Pop
+
+		ex No meuNo = pilha.pop();
+
+		meuNo recebe a referência do último elemento adicionado à pilha e o mesmo é retirado da pilha
+
+	Método Push
+		
+		No meuNo = new No();
+		meuNo.setInt(1);
+
+		meuNo recebe a referência do novo elemento da lista
+
+	Método isEmpty
+
+		public boolean isEmpty(){
+			if(refNo == null) {
+				return true;
+			}
+			return false;
+		}
+
+		retorna false se a pilha está vazia e true caso contrário
