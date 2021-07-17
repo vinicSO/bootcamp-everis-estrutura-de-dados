@@ -4,8 +4,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        No<String> no1 = new No<:qdd::wq
-                >("Conteúdo no1");
+        No<String> no1 = new No<>("Conteúdo no1");
         No<String> no2 = new No<>("Conteúdo no2");
         No<String> no3 = new No<>("Conteúdo no3");
         No<String> no4 = new No<>("Conteúdo no4");
