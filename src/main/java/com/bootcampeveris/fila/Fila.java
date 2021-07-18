@@ -52,11 +52,11 @@ public class Fila {
 
     @Override
     public String toString() {
-        final StringBuilder sb = new StringBuilder("Fila{");
+        final StringBuilder sb = new StringBuilder("Fila{ ");
         No noAuxiliar = refNoEntradaFila;
         if (refNoEntradaFila != null) {
             while (true){
-                sb.append("[No{objeto").append(noAuxiliar.getObject()).append("}]");
+                sb.append("[No{objeto=").append(noAuxiliar.getObject()).append("}]--->");
 
                 if(noAuxiliar.getRefNo() != null)
                     noAuxiliar = noAuxiliar.getRefNo();
@@ -66,7 +66,7 @@ public class Fila {
                 }
             }
         }
-        sb.append('}');
+        sb.append(" }");
         return sb.toString();
     }
 }
