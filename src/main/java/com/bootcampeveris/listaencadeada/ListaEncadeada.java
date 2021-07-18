@@ -36,7 +36,7 @@ public class ListaEncadeada<T> {
         }
         No<T> refAux = refNoEntrada;
         No<T> noRetorno = null;
-        for (int i=0 ; i < ultimoIndice ; i++) {
+        for (int i=0 ; i <= ultimoIndice ; i++) {
             if (i == index) {
                 noRetorno = refAux;
                 break;
@@ -79,7 +79,7 @@ public class ListaEncadeada<T> {
             sb.append("[No{conteudo=").append(refAux.getConteudo()).append("}] ---> ");
             refAux = refAux.getProximoNo();
         }
-        sb.append("null");
+        sb.append("null}");
         return sb.toString();
     }
 }
