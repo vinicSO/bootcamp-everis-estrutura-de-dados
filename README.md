@@ -84,4 +84,26 @@ Pilha
 			return false;
 		}
 
-		retorna false se a pilha está vazia e true caso contrário
+		Retorna false se a pilha está vazia e true caso contrário
+
+Fila
+
+	É uma estrutura de dados que possui como característica a seguinte regra: o primeiro que entra é o primeiro que sai
+
+	FIFO - First In First Out
+
+	Método Enqueue (Enfilerar)
+
+		Adiciona um novo nó ao fim da fila
+
+	Método DeEnqueue (Desenfilerar)
+
+		O primeiro nó é excluído da fila
+
+    Método First
+
+        Retorna o primeiro objeto da fila
+
+    Método IsEmpty
+
+        Retorna false se a fila esá vazia e true caso contrário
