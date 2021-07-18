@@ -107,3 +107,23 @@ Fila
     Método IsEmpty
 
         Retorna false se a fila esá vazia e true caso contrário
+
+Listas Encadeadas
+
+	Estrutura da Lista
+
+	[{ref. nó}] -> [{object, ref. nó}] -> [{object, ref. nó}] -> [{object, ref. nó}] -> null
+
+	Método Add
+
+	Adicionar um objeto em uma determinada posição da lista
+
+	Método Remove
+
+	Remover um objeto da lista
+
+	Método Get
+
+	Retornar a referência de um objeto da lista
+
+	
