@@ -68,7 +68,18 @@ public class ListaEncadeada<T> {
                 } else break;
             } else break;
         }
-
         return tamanhoLista;
+    }
+
+    @Override
+    public String toString() {
+        final StringBuilder sb = new StringBuilder("ListaEncadeada{");
+        No<T> refAux = refNoEntrada;
+        for (int i=0 ; i<this.size() ; i++) {
+            sb.append("[No{conteudo=").append(refAux.getConteudo()).append("}] ---> ");
+            refAux = refAux.getProximoNo();
+        }
+        sb.append("null");
+        return sb.toString();
     }
 }
