@@ -1,4 +1,4 @@
-package com.bootcampeveris;
+package com.bootcampeveris.listaencadeada;
 
 public class No<T> {
 
@@ -52,5 +52,7 @@ public class No<T> {
             sb.append(" -> ").append(proximoNo.toString());
         } else
             sb.append(" -> null");
+
+        return sb.toString();
     }
 }
