@@ -25,6 +25,10 @@ public class ListaEncadeada<T> {
         refAux.setProximoNo(novoNo);
     }
 
+    public T get(int index) {
+        return getNo(index).getConteudo();
+    }
+
     private No<T> getNo(int index) {
         int ultimoIndice = this.size()-1;
         if (index > ultimoIndice) {
