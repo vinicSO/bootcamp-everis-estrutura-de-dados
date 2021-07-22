@@ -6,11 +6,11 @@ Memórias
   
 Atribuição E Referência
 
-	- As atribuições em Java são por cópia de valor sempre
+    As atribuições em Java são por cópia de valor sempre
 
-	- Com tipo primitivo, copiamos o valor em memória
+	Com tipo primitivo, copiamos o valor em memória
 
-	- Com objetos copiamos o valor da referência em memória, sem duplicar o objeto
+	Com objetos copiamos o valor da referência em memória, sem duplicar o objeto
 
 Conceito De Nó E Encadeamento
 
@@ -20,10 +20,10 @@ Generics
 
 	Contexto
 
-	- Evitar casting excessivo
-	- Evitar códigos redundantes
-	- Encontrar erros em tempo de compilação
-	- Introduzido desde o Java SE 5.0
+	    Evitar casting excessivo
+	    Evitar códigos redundantes
+	    Encontrar erros em tempo de compilação
+	    Introduzido desde o Java SE 5.0
 
 	Wildcards (tradução literal: coringas)
 
@@ -32,15 +32,15 @@ Generics
 
 	Exemplo Unknown Wildcard: Um método que imprime qualquer lista passada como parâmetro
 
-	public void imprimeLista(List<?> lista){...}
+	    public void imprimeLista(List<?> lista){...}
 
 	Exemplo Upper Bounded Wildcard: Um método que imprime qualquer lista passada que seja do tipo Pessoa, ou que seja descendente desta classe
 
-	public void imprimeLista(List<? extends Pessoa> lista){...}
+	    public void imprimeLista(List<? extends Pessoa> lista){...}
 
 	Exemplo Lower Bounded Wildcard: Um método que imprime qualquer lista passada, com excessão de lista do tipo Pessoa ou que são descendente desta classe
 
-	public void imprimeLista(List<? super Pessoa> lista){...}
+	    public void imprimeLista(List<? super Pessoa> lista){...}
 
 Convenções
 
@@ -112,18 +112,20 @@ Listas Encadeadas
 
 	Estrutura da Lista
 
-	[{ref. nó}] -> [{object, ref. nó}] -> [{object, ref. nó}] -> [{object, ref. nó}] -> null
+	    [{ref. nó}] -> [{object, ref. nó}] -> [{object, ref. nó}] -> [{object, ref. nó}] -> null
 
 	Método Add
 
-	Adicionar um objeto em uma determinada posição da lista
+	    Adicionar um objeto em uma determinada posição da lista
 
 	Método Remove
 
-	Remover um objeto da lista
+	    Remover um objeto da lista
 
 	Método Get
 
-	Retornar a referência de um objeto da lista
+	    Retornar a referência de um objeto da lista
 
-	
+ListasDuplamenteEncadeadas
+
+	A principal diferença para a lista encadeada simples é que na lista duplamente encadeada os elementos possuem 2 referências ao invés de uma, onde a 1º se refere ao elemento anterior e a 2º se refere ao próximo elemento. E, ainda, possui uma referência para o último elemento, diferentemente da lista encadeada simples que possuia apenas uma referência para o primeiro elemento.
